@@ -20,6 +20,7 @@ public class Controller {
     @FXML
     String defaultUsername = "Danusha";
     String defaultPassword = "12345";
+    @FXML
     Label topLabel;
     Label categorySelectID;
     Label categorySelectName;
@@ -33,7 +34,9 @@ public class Controller {
     Label deleteCategoryHeading;
     Label deleteCategoryInfoLabel;
 
+    @FXML
     TextField username;
+    @FXML
     TextField password;
     TextField categorySearchInput;
     TextField categoryEditName;
@@ -44,6 +47,7 @@ public class Controller {
     TextField addProductName;
     TextField addProductID;
 
+    @FXML
     Button loginBtn;
     Button addCategoryBtn;
     Button categoryEditBtn;
