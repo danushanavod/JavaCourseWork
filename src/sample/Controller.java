@@ -312,4 +312,8 @@ public class Controller {
         searchProductStage.setScene(scene);
         searchProductStage.show();
     }
+
+    public void editProduct(ActionEvent event) {
+
+    }
 }

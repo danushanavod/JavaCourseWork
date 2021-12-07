@@ -26,7 +26,7 @@
               <MenuItem mnemonicParsing="false" onAction="#addProduct" text="Add Product" />
                   <MenuItem mnemonicParsing="false" onAction="#searchProduct" text="Search Product" />
                   <MenuItem mnemonicParsing="false" text="View Products" />
-                  <MenuItem mnemonicParsing="false" text="Edit Product" />
+                  <MenuItem mnemonicParsing="false" onAction="#editProduct" text="Edit Product" />
                   <MenuItem mnemonicParsing="false" onAction="#searchDeleteCategory" text=" Delete Product" />
             </items>
           </Menu>

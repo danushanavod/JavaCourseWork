@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
@@ -9,7 +12,18 @@
       <TextField fx:id="password" layoutX="285.0" layoutY="241.0" />
       <Label layoutX="187.0" layoutY="191.0" text="Username" />
       <Label layoutX="187.0" layoutY="244.0" text="Password" />
-      <Button fx:id="loginBtn" layoutX="382.0" layoutY="294.0" mnemonicParsing="false" onAction="#logInPressed" text="Log In" />
+      <Button fx:id="loginBtn" layoutX="382.0" layoutY="294.0" mnemonicParsing="false" onAction="#logInPressed" text="Log In">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
       <Label fx:id="topLabel" layoutX="237.0" layoutY="146.0" prefHeight="17.0" prefWidth="0.0" />
+      <Label layoutX="214.0" layoutY="37.0" text="Priyalal Store">
+         <font>
+            <Font name="Roboto Light" size="32.0" />
+         </font>
+      </Label>
    </children>
+   <effect>
+      <ColorInput height="255.0" paint="#1aa448" width="255.0" />
+   </effect>
 </AnchorPane>
