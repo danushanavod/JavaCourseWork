@@ -1,0 +1,16 @@
+#loginBtn {
+    -fx-background-color: #1C7947;
+}
+
+#loginBtn:hover {
+    -fx-background-color: blue;
+}
+
+.textBox {
+    -fx-background-color: white;
+
+}
+
+.textBox::placeholder {
+    -fx-text-fill: green;
+}

@@ -40,6 +40,6 @@
             </Menu>
         </menus>
       </MenuBar>
-      <Button layoutX="282.0" layoutY="290.0" mnemonicParsing="false" onAction="#printCategories" text="View all categories" />
+      <Button layoutX="266.0" layoutY="285.0" mnemonicParsing="false" onAction="#printCategories" text="View all categories" />
    </children>
 </AnchorPane>

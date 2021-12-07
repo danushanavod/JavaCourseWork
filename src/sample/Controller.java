@@ -5,6 +5,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -13,94 +14,43 @@ import java.util.ArrayList;
 public class Controller {
     public static ArrayList<Category> categoryArrayList = new ArrayList<>();
     public Category selectedCategory;
+    public ImageView loginImageView;
     private TableView table = new TableView();
 
     @FXML
     String defaultUsername = "Danusha";
     String defaultPassword = "12345";
-
-    @FXML
     Label topLabel;
-
-    @FXML
     Label categorySelectID;
-
-    @FXML
     Label categorySelectName;
-
-    @FXML
     Label categoryTopLabel;
-
-    @FXML
     Label categoryFound;
-
-    @FXML
     Label categoryNameExist;
-
-    @FXML
     Label categoryIdExist;
-
-    @FXML
     Label deleteCategoryIndoLabel;
-
-    @FXML
     Label deleteCategorySelectedName;
-
-    @FXML
     Label deleteCategorySelectedID;
-
-    @FXML
     Label deleteCategoryHeading;
-
-    @FXML
     Label deleteCategoryInfoLabel;
 
-    @FXML
     TextField username;
-
-    @FXML
     TextField password;
-
-    @FXML
     TextField categorySearchInput;
-
-    @FXML
     TextField categoryEditName;
-
-    @FXML
     TextField categoryEditID;
-
-    @FXML
     TextField deleteCategoryTextField;
-
-    @FXML
+    TextField categoryName;
+    TextField categoryID;
     TextField addProductName;
-
-    @FXML
     TextField addProductID;
 
-    @FXML
     Button loginBtn;
-
-    @FXML
     Button addCategoryBtn;
-
-    @FXML
     Button categoryEditBtn;
-
-    @FXML
     Button deleteCategoryBtn;
 
-    @FXML
-    TextField categoryName;
-
-    @FXML
-    TextField categoryID;
-
-    @FXML
     SplitMenuButton addProductSelectCategory;
 
-    @FXML
     ChoiceBox<String> addProductChoiceBox;
 
     public static ArrayList<Category> getCategoryArrayList() {

@@ -2,24 +2,43 @@
 
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="900.0" stylesheets="@loginStyles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <TextField fx:id="username" layoutX="285.0" layoutY="188.0" />
-      <TextField fx:id="password" layoutX="285.0" layoutY="241.0" />
-      <Label layoutX="187.0" layoutY="191.0" text="Username" />
-      <Label layoutX="187.0" layoutY="244.0" text="Password" />
-      <Button fx:id="loginBtn" layoutX="382.0" layoutY="294.0" mnemonicParsing="false" onAction="#logInPressed" text="Log In">
+      <TextField fx:id="username" layoutX="515.0" layoutY="263.0" prefHeight="27.0" prefWidth="278.0" promptText="Enter username" styleClass="textBox" />
+      <TextField fx:id="password" layoutX="516.0" layoutY="326.0" prefHeight="27.0" prefWidth="278.0" promptText="Enter password" styleClass="textBox" />
+      <Label layoutX="516.0" layoutY="242.0" text="Username" />
+      <Label layoutX="517.0" layoutY="307.0" text="Password" />
+      <Button id="loginBtn" fx:id="loginBtn" layoutX="604.0" layoutY="401.0" mnemonicParsing="false" onAction="#logInPressed" prefHeight="27.0" prefWidth="103.0" style="-fx-background-radius: 12; -fx-font-weight: 700; -fx-text-fill: white;" stylesheets="@loginStyles.css" text="Log In">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
       <Label fx:id="topLabel" layoutX="237.0" layoutY="146.0" prefHeight="17.0" prefWidth="0.0" />
-      <Label layoutX="214.0" layoutY="37.0" text="Priyalal Store">
+      <Label layoutX="513.0" layoutY="116.0" text="Welcome back!">
          <font>
-            <Font name="Roboto Light" size="32.0" />
+            <Font name="Verdana" size="31.0" />
          </font>
       </Label>
+      <Label layoutX="513.0" layoutY="163.0" prefHeight="51.0" prefWidth="288.0" text="Please enter you username and password to log in to to system" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="705.0" layoutY="360.0" text="Forgot password" textFill="#0a5ada">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Label>
+      <Pane prefHeight="550.0" prefWidth="450.0" style="-fx-background-color: #1C7947;">
+         <children>
+            <ImageView fx:id="loginImageView" fitHeight="267.0" fitWidth="379.0" layoutX="68.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imgs/Login%20Image%202.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
    </children>
 </AnchorPane>
