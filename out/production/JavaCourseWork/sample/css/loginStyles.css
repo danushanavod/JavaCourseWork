@@ -10,7 +10,3 @@
     -fx-background-color: white;
 
 }
-
-.textBox::placeholder {
-    -fx-text-fill: green;
-}
