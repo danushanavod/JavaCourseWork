@@ -33,9 +33,9 @@
          </cursor></Label>
       <Pane prefHeight="550.0" prefWidth="450.0" style="-fx-background-color: #1C7947;">
          <children>
-            <ImageView fx:id="loginImageView" fitHeight="272.0" fitWidth="288.0" layoutX="87.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="loginImageView" fitHeight="267.0" fitWidth="379.0" layoutX="68.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@imgs/Login%20Image.png" />
+                  <Image url="@imgs/Login%20Image%202.png" />
                </image>
             </ImageView>
          </children>
