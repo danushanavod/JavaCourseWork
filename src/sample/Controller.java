@@ -6,6 +6,9 @@ import javafx.scene.control.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -15,6 +18,7 @@ public class Controller {
     public static ArrayList<Category> categoryArrayList = new ArrayList<>();
     public Category selectedCategory;
     public ImageView loginImageView;
+
     private TableView table = new TableView();
 
     @FXML
@@ -22,35 +26,54 @@ public class Controller {
     String defaultPassword = "12345";
     @FXML
     Label topLabel;
+    @FXML
     Label categorySelectID;
+    @FXML
     Label categorySelectName;
+    @FXML
     Label categoryTopLabel;
+    @FXML
     Label categoryFound;
+    @FXML
     Label categoryNameExist;
+    @FXML
     Label categoryIdExist;
     Label deleteCategoryIndoLabel;
+    @FXML
     Label deleteCategorySelectedName;
+    @FXML
     Label deleteCategorySelectedID;
+    @FXML
     Label deleteCategoryHeading;
+    @FXML
     Label deleteCategoryInfoLabel;
 
     @FXML
     TextField username;
     @FXML
     TextField password;
+    @FXML
     TextField categorySearchInput;
+    @FXML
     TextField categoryEditName;
+    @FXML
     TextField categoryEditID;
+    @FXML
     TextField deleteCategoryTextField;
+    @FXML
     TextField categoryName;
+    @FXML
     TextField categoryID;
     TextField addProductName;
     TextField addProductID;
 
     @FXML
     Button loginBtn;
+    @FXML
     Button addCategoryBtn;
+    @FXML
     Button categoryEditBtn;
+    @FXML
     Button deleteCategoryBtn;
 
     SplitMenuButton addProductSelectCategory;
@@ -95,7 +118,7 @@ public class Controller {
         String currentCategoryName = categoryName.getText();
         try {
             int currentCategoryID = Integer.parseInt(categoryID.getText());
-            Category currentCategory = new Category(currentCategoryName, currentCategoryID);
+            Category currentCategory = new Category( currentCategoryID, currentCategoryName);
             categoryArrayList.add(currentCategory);
             currentStage.close();
         } catch (NumberFormatException e) {
@@ -268,6 +291,5 @@ public class Controller {
     }
 
     public void editProduct(ActionEvent event) {
-
     }
 }

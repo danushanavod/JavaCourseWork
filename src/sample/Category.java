@@ -1,12 +1,22 @@
 package sample;
 
 public class Category {
-    String name;
     int categoryId;
+    String name;
+//    String description;
     int stockCount;
 
-    public Category(String name, int categoryId) {
+    public Category(int categoryId, String name) {
         this.name = name;
+        this.categoryId = categoryId;
+//        this.description = description;
+    }
+
+    public int getCategoryId() {
+        return categoryId;
+    }
+
+    public void setCategoryId(int categoryId) {
         this.categoryId = categoryId;
     }
 
@@ -14,15 +24,15 @@ public class Category {
         return name;
     }
 
-    public int getCategoryId() {
-        return categoryId;
-    }
-
     public void setName(String name) {
         this.name = name;
     }
 
-    public void setCategoryId(int categoryId) {
-        this.categoryId = categoryId;
-    }
+//    public String getDescription() {
+//        return description;
+//    }
+//
+//    public void setDescription(String description) {
+//        this.description = description;
+//    }
 }

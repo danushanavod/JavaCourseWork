@@ -1,5 +1,7 @@
 .menuBtn {
-    -fx-background-color: #18693e;
+    -fx-background-color:  trnsparent;
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-color: white;
 }
 
 .menuBtn:hover {

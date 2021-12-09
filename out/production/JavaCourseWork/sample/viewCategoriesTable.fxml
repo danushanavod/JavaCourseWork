@@ -3,14 +3,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane prefHeight="277.0" prefWidth="526.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane prefHeight="277.0" prefWidth="526.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CategoryViewTable">
    <children>
-      <TableView layoutX="72.0" layoutY="23.0" prefHeight="200.0" prefWidth="383.0">
-        <columns>
-          <TableColumn prefWidth="190.0" text="Category Name" />
-          <TableColumn minWidth="0.0" prefWidth="192.0" text="Category ID" />
-        </columns>
-      </TableView>
+      <TableView fx:id="categoryTable" layoutX="72.0" layoutY="23.0" prefHeight="200.0" prefWidth="383.0">
+         <columns>
+            <TableColumn fx:id="categoryTableID" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="categoryTableName" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="categoryTableDescription" prefWidth="75.0" text="Description" />
+            <TableColumn fx:id="categoryTableDate" prefWidth="75.0" text="Date" />
+         </columns></TableView>
    </children>
 </AnchorPane>
